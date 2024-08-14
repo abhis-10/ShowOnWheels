@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Images/StyleSheet.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <style>
+        #st{
+            width: 968px;
+            height: 399px;
+            position: relative;
+            right: 4%;
+            bottom: 16%;
+            background:black;
+        }
+        #nd{
+            width: 400px;
+            height: 230px;
+            background: rgb(29, 247, 221);
+        }
+        #rd{
+            border: 1px solid white;
+            width: 565px;
+            position: relative;
+            left: 400px;
+            bottom: 230px;
+            height:393px;
+            background: lavender;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainDivContent" style="position: relative;width: 100%; margin-top: 0px; margin-bottom: 0px;">
+        <div style="width: 960px; margin-top: 5px; margin-left: auto; margin-right: auto;">
+            <div style="width: 960px;height: 80px;">
+                <img src="Images/logo.png" alt="Not available" width="500px" height="100px">
+                <h5>For Enquiry <br>
+                    Call Us 9225644843
+                </h5>
+                <img src="Images/callus.png" style="float: right; margin-top: 15px;">
+            </div>
+            <div style="width: 500px; height: 20px; float: left; text-align: center;">
+                <span class="auto-style1"><b>The Ultimate Way For Booking Movie Tickets</b></span>
+            </div>
+        </div>
+        <div id="topnav" style="float:left; width: 960px; height: 20px; word-spacing: 9px; font-size: 90%; background-color: black;  padding-top: 6px; white-space: nowrap; text-align: left; margin-left: 20%;">
+            <nav style="margin-left: 48px; ">
+                <a href="ShowOnWheels_Home.html" style="color: white; text-decoration: none;">Home|</a> |
+                <a href="about.html" style="color: white; text-decoration: none;">|About Us|</a> |
+                <a href="contact.html" style="color: white; text-decoration: none;">|Contact Us|</a> |
+                <a href="upcomingMoviesTables[1].html" style="color: white;text-decoration: none;">|Upcoming Movie|</a>
+                <a href="Movie_Bookingform.html" style="color: white; text-decoration: none;">|Online Booking|</a>
+                <a href="BankOffers_LuckyDraw.html" style="color: white; text-decoration:dotted;">|Bank Offers And
+                    More</a>
+            </nav>
+        </div>
+        <div style="width: 901px; height: 730px; position: relative; margin-left: 20%; padding: 29px; overflow: hidden; background-color: white;">
+        <div id="half" style="width: 966px;height: 400px; position: relative; right: 4%; bottom: 11%; background-color: darkorange; ">
+        <h2 style="color:azure;position: relative; left: 22%; font-size: 57px;">Lets Have a Talk!</h2>
+        <img src="Images/talk.jpg" style="position: relative; left: 34%; border-radius: 80px; width: 300px; bottom: 6%;">
+
+        </div>
+        <div id="st">
+            <div id="nd">
+                <h2 style="color: white; position: relative; left: 30%; top: 23%; font-size: 40px;"><i>Meet Us</i></h2>
+                <a href="" style="position: relative; left: 40%; text-decoration: none; top: 15%; color: black;" onclick="call()"><ion-icon name="call-outline"></ion-icon>+4078965429</a>
+                <a href="" style="position: relative; top: 29%; left: 10%; text-decoration: none; color: black;" onclick="loc()"><ion-icon name="navigate-outline"></ion-icon>Queen Street 37,Lisbon</a>
+                <div id="th">
+                    <img src="Images/logo.png" style="position: relative; width: 330px; left: 10%; top: 160px; ">
+                </div>
+            </div>
+            <div id="rd">
+                <p><h1 style="position: relative; left: 20%; font-size: 39px; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: lightseagreen;"><i>PITCH US</i></h1></p>
+                <form  name="pitch">
+                    <textarea  cols="50" rows="13" style="background: lavender;" name="txt" placeholder="You can pitch us like .....                       Hello my name is YOUR NAME and my email is YOUR EMAIL and i would like to suggest some latest and trending MOVIES."></textarea>
+                    <input type="button" value="SUBMIT" style="background:aquamarine; color: red; padding: 10px; border-radius: 10px;border-color: aquamarine; "required onclick="sub()">
+                </form>
+               
+            </div>
+        </div>
+        </div>
+        <script>
+            function call(){
+                alert("Do You Want To Make A Call?")
+            }
+            function loc(){
+                alert("Sorry Location is not available right now.")
+            }
+            function sub(){
+              if(document.pitch.txt.value != ""){
+                alert("Thank you for your pitch we will surely look into your suggestions.")
+              }
+              else{
+                alert("Please fill the above block.")
+              }
+            }
+        </script>
+</body>
+</html>

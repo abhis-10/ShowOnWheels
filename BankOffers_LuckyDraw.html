@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Offers And Lucky Draw</title>
+    <link type="text/css" rel="stylesheet" href="Images/StyleSheet.css">
+    <style>
+        a{
+            color: orange;
+            font-size: 20px;
+            text-decoration: none;
+            word-spacing: 3px;
+        }
+        th{
+            color: orange;
+            font-size: 30px;
+        }
+        tr{
+            color: orange;
+            font-size: 20px;  
+        }
+        #a1{
+            width: 130px;
+            background: rgb(241, 231, 214);
+            padding: 7px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        #a2{
+            margin-top: 10px;
+            width: 130px;
+            background: rgb(239, 233, 223);
+            padding: 7px;
+            border-radius: 20px;
+            text-align: center;
+        }
+    </style>
+    <script src="jquery-1.8.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#coolMenu').hide();
+            $('#prooffers').hide();
+            $("#bank").mouseenter(function(){
+                $('#coolMenu').show(500);
+            });
+            $("#bank").mouseleave(function(){
+                $("#coolMenu").hide(500);
+            });
+            $("#pro").mouseenter(function(){
+                $("#prooffers").show(500);
+            });
+            $("#pro").mouseleave(function(){
+                $("#prooffers").hide(500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="mainDivContent" style="position: relative;width: 100%; margin-top: 0px; margin-bottom: 0px;">
+        <div style="width: 960px; margin-top: 5px; margin-left: auto; margin-right: auto;">
+            <div style="width: 960px;height: 80px;">
+                <img src="Images/logo.png" alt="Not available" width="500px" height="100px">
+                <h5>For Enquiry <br>
+                    Call Us 9225644843
+                </h5>
+                <img src="Images/callus.png" style="float: right; margin-top: 15px;">
+            </div>
+            <div style="width: 500px; height: 20px; float: left; text-align: center;">
+                <span class="auto-style1"><b>The Ultimate Way For Booking Movie Tickets</b></span>
+            </div>
+        </div>
+        <div id="topnav"
+            style="float:left; width: 960px; height: 20px; word-spacing: 9px; font-size: 90%; background-color: black;  padding-top: 3px; white-space:normal; text-align: left; margin-left: 20%; margin-top: 5px;">
+            <nav style="margin-left: 38px; ">
+                <a href="ShowOnWheels_Home.html" style="color: white; text-decoration: none;">Home|</a> |
+                <a href="about.html" style="color: white; text-decoration: none;">|About Us|</a> |
+                <a href="contact.html" style="color: white; text-decoration: none;">|Contact Us|</a> |
+                <a href="upcomingMoviesTables[1].html" style="color: white;text-decoration: none;">|Upcoming Movie|</a>
+                <a href="Movie_Bookingform.html" style="color: white; text-decoration: none;">|Online Booking|</a>
+                <a href="BankOffers_LuckyDraw.html" style="color: white; text-decoration:dotted;">|Bank Offers And More</a>
+            </nav>
+        </div>
+        <div
+            style="width: 901px; height: 633px; position: relative; margin-left: 20%; padding: 29px; overflow: hidden; background-color: white;">
+
+            <div id="a1"><a href="" id="bank">Bank Offers</a><br></div>
+            <div id="a2"><a href="" id="pro">Lucky Draw</a></div>
+
+            <div id="coolMenu" style="width: 500px; height: 400px; padding-top: 0px; border: 4px solid orange; background-color: black;">
+            <table>
+                <tr>
+                    <th><b>Bank Offers</b></th>
+                </tr>
+                <tr><td>Use ACA Bank Credit Card and Avail Buy 1 Get 1 Free Offer</td></tr>
+                <tr><td>Use ACE Bank Debit Card and Get 5% Off on Ticket Booking</td></tr>
+                <tr><td>Use FHDC Band Credit Card and Get 10% Off on Ticket Booking</td></tr>
+                <tr><td>Use AQ Bandk Credit Card and Avail Buy 2 Get 1 Free Offer</td></tr>
+            </table>
+            </div>
+            <div id="prooffers" style="width: 500px; height: 400px; padding-top: 0px; text-align: center; border: 4px solid orange; background-color: black; margin-top: 10px;">
+                <table>
+                    <tr>
+                        <th><b>Lucky Draw</b></th>
+                    </tr>
+                    <tr><td>Book Tickets Online And get a Chance to Grab Dinner Vouchers at Aura</td></tr>
+                    <tr><td>Register on your Webstite Now and Get a Chance to Grab Free Tickets</td></tr>
+                    <tr><td>Avail 20% Discounts on tickets at Marcus Cinema</td></tr>
+                </table>
+            </div>
+        </div>
+</body>
+</html>
